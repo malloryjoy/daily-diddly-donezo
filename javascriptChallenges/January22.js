@@ -85,3 +85,8 @@ getAverageGrade([63, 69, 65, 66, 71, 64, 65]); //returns "D"! **
 getAverageGrade([97, 98, 99, 100, 96, 97, 98, 99, 100]); //returns "A+"!
 getAverageGrade([75, 100, 88, 79, 80, 78, 64, 60]); //returns "C+"!
 getAverageGrade([45, 48, 50, 52, 100, 54, 56, 58, 59]); //returns "F"!
+
+/* **When testing my code, I noticed that I could get the first two results correctly as well as the last three,
+but the third test didn't return anything. Thanks to my multiple check lines, I determined that the value of test three
+was 66 and some change. Given that the answer HAD to be a D, as opposed to a D+, I knew I needed to apply the Math.floor()
+method to round that number down to 66 for the correct answer to apply! Once this was added, we were "grade" to go!  */
