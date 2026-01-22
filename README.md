@@ -130,9 +130,9 @@ As well, due to the nature of this initiative, there is no demo site for which t
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@malloryjoycreates](https://instagram.com/malloryjoycreates) 
+Instagram - [@malloryjoycreates](https://instagram.com/malloryjoycreates) 
 
-Project Link: [GitHub](https://github.com/malloryjoy/daily-diddly-donezo)
+LinkedIn: [Mallory Joy](https://www.linkedin.com/in/malloryjoy/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
