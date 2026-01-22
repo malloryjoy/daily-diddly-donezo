@@ -30,19 +30,19 @@
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Hacked By Nedry</h3>
+<h3 align="center">Daily Diddly Donezo!</h3>
 
   <p align="center">
-    Ah, ah, ah! You didn't say the magic word! 
+    Coding Challengerinos for each Diddly Day!
     <br />
-    <a href="https://github.com/malloryjoy/hackedbynedry"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/malloryjoy/daily-diddly-donezo"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/malloryjoy/hackedbynedry">View Demo</a>
+    <a href="https://github.com/malloryjoy/daily-diddly-donezo">View Demo</a>
     &middot;
-    <a href="https://github.com/malloryjoy/hackedbynedry/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/malloryjoy/daily-diddly-donezo/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/malloryjoy/hackedbynedry/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/malloryjoy/daily-diddly-donezo/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -58,12 +58,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#notes">Notes</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -77,7 +72,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This project recreates the infamous "hacking" error sequence as seen in the iconic cinematic masterpiece <a href="https://www.youtube.com/watch?v=RfiQYRn7fBg" target="_blank">Jurassic Park</a>.
+Some days I don't have time to dedicate multiple hours for coding my latest project. However, thanks to sites like FreeCodeCamp, HackerRank, and LeetCode, I can still practice a bit each day, learning and practicing the essentials for mastery! This repository is for tracking that progress. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,10 +81,10 @@ This project recreates the infamous "hacking" error sequence as seen in the icon
 ### Built With
 
 
-* [![Typescript][Typescript.io]][Typescript-url]
+* [![Javascript][Javascript.io]][Javascript-url]
 * [![React][React.io]][React-url]
-* [![HTML][HTML.io]][HTML-url]
-* [![Tailwind CSS][CSS.io]][CSS-url]
+* [![Python][Python.io]][Python-url]
+* [![Java][Java.io]][Java-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,27 +96,17 @@ This project recreates the infamous "hacking" error sequence as seen in the icon
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Try out different commands to turn the power back on in Jurassic Park. If you can. 
+Each file represents a different coding challenge. Each coding challenge file will include (within the comments) the original challenge, the solution, as well as the source of the challenge! 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Create Basic Landing Page (HTML/Tailwind)
-- [ ] Create input "loop" that will accept "key phrases" three times (React/Typescript)
-- [ ] Create trigger feature that will unleash the chaos after loop completes (React/Typescript)
-    - [ ] YOU DIDN'T SAY THE MAGIC WORD for 800 lines 
-    - [ ] Open pop up with "honeypot" video
-    - [ ] Add "Click to Repair" link and it's just opening an image that says "YOU DID IT!" over that one perfect shot from the first film
-
- 
 
 
-See the [open issues](https://github.com/malloryjoy/repo_name/issues) for a full list of proposed features (and known issues).
+
+See the [open issues](https://github.com/malloryjoy/daily-diddly-donezo/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +117,7 @@ See the [open issues](https://github.com/malloryjoy/repo_name/issues) for a full
 <!-- NOTES -->
 ## Notes
 
-Ideally, this project will display the iconic "Magic Word" sequence from "Jurassic Park." 
+Due to the nature of this initiative, there is no demo site for which to launch or test this code. That said, I give any guests/visitors full permission to copy/paste my code to test in their own dev/sandbox environment!  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,9 +126,9 @@ Ideally, this project will display the iconic "Magic Word" sequence from "Jurass
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@malloryjoycreates](https://instagram.com/malloryjoycreates) - malloryjoy13@gmail.com
+Your Name - [@malloryjoycreates](https://instagram.com/malloryjoycreates) 
 
-Project Link: [GitHub](https://github.com/malloryjoy/hackedbynedry)
+Project Link: [GitHub](https://github.com/malloryjoy/daily-diddly-donezo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,26 +142,20 @@ Project Link: [GitHub](https://github.com/malloryjoy/hackedbynedry)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/malloryjoy/charcuterie.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/malloryjoy/daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/malloryjoy
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/malloryjoy/
 [product-screenshot]: screenshot.png
 [Typescript.io]: https://img.shields.io/badge/Typescript-000000?style=for-the-badge&logo=typescript&logoColor=white
-[Typescript-URL]: https://www.typescriptlang.org/docs/
-[React.io]: https://img.shields.io/badge/React-ff0000?style=for-the-badge&logo=react&logoColor=white
-[React-URL]: https://react.dev/learn
-[HTML.io]: https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white
-[HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[CSS.io]: https://img.shields.io/badge/Tailwind_CSS-ff0000?style=for-the-badge&logo=tailwindcss&logoColor=white
-[CSS-url]: https://tailwindcss.com/docs/installation/tailwind-cli
+
+[Javascript.io]: https://img.shields.io/badge/Javascript-395F23?style=for-the-badge&logo=javascript&logoColor=white
+[Javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[React.io]: https://img.shields.io/badge/React-C6888C?style=for-the-badge&logo=react&logoColor=black
+[React-url]: https://react.dev/
+[Python.io]: https://img.shields.io/badge/Python-395F23?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://docs.python.org/3/
+[Java.io]: https://img.shields.io/badge/Java-C6888C?style=for-the-badge&logo=java&logoColor=black
+[Java-url]: https://docs.oracle.com/en/java/
 
 
