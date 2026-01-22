@@ -153,7 +153,7 @@ Project Link: [GitHub](https://github.com/malloryjoy/daily-diddly-donezo)
 [product-screenshot]: screenshot.png
 [Javascript.io]: https://img.shields.io/badge/Javascript-395F23?style=for-the-badge&logo=javascript&logoColor=white
 [Javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-[React.io]: https://img.shields.io/badge/React-C6888C?style=for-the-badge&logo=react&logoColor=black
+[React.io]: https://img.shields.io/badge/React-C6888C?style=for-the-badge&logo=react&logoColor=white
 [React-url]: https://react.dev/
 [Python.io]: https://img.shields.io/badge/Python-395F23?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://docs.python.org/3/
