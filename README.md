@@ -117,7 +117,11 @@ See the [open issues](https://github.com/malloryjoy/daily-diddly-donezo/issues) 
 <!-- NOTES -->
 ## Notes
 
-Due to the nature of this initiative, there is no demo site for which to launch or test this code. That said, I give any guests/visitors full permission to copy/paste my code to test in their own dev/sandbox environment!  
+The word "daily" is a bit of a misdirect! There will be days that I do not upload to this repo; however, those days will likely be when a different repo sees a great deal of work as I work on other projects instead of standard coding challenges.
+
+As well, due to the nature of this initiative, there is no demo site for which to launch or test this code. That said, I give any guests/visitors full permission to copy/paste any code they wish to test in their own dev/sandbox environment! 
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
