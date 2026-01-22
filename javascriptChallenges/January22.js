@@ -28,14 +28,14 @@ Calculate the average by adding all scores in the array and dividing by the tota
 
 */
 function getAverageGrade(scores) {
-    const scoreSum =  scores.reduce((a,b)=>a+b)
+    const scoreSum =  scores.reduce((a,b)=>a+b) //step 1: calculate sum of all array values added together
 
-  //console.log(scoreSum)
-    const averageScore = Math.floor(scoreSum / scores.length);
-  //console.log(averageScore);
+  console.log(scoreSum)  //ensure the scoreSum step worked
+    const averageScore = Math.floor(scoreSum / scores.length); //step 2: determine mean (average) score by dividing the sum value by number of values. Round down this value to the nearest whole number for THIS specific challenge. **
+  console.log(averageScore); //ensure the averageScore step worked 
 
-  let letterGrade = ""; 
-  if (averageScore >= 97  && averageScore <= 100){
+  let letterGrade = "";  //declare the letterGrade value as a blank string variable
+  if (averageScore >= 97  && averageScore <= 100){ //if/else statement for each corresponding letter grade by score value
      letterGrade = "A+";
   }
   else if (averageScore >= 93  && averageScore <= 96){
@@ -74,14 +74,14 @@ function getAverageGrade(scores) {
    else if (averageScore < 60){
      letterGrade = "F";
   }
-  console.log(letterGrade)
-  return letterGrade;
+  console.log(letterGrade) //check to ensure value is returned properly
+  return letterGrade; //ACTUALLY return the property! 
   
 }
 
-getAverageGrade([92, 91, 90, 94, 89, 93]);
-getAverageGrade([84, 89, 85, 100, 91, 88, 79]);
-getAverageGrade([63, 69, 65, 66, 71, 64, 65]);
-getAverageGrade([97, 98, 99, 100, 96, 97, 98, 99, 100]);
-getAverageGrade([75, 100, 88, 79, 80, 78, 64, 60]);
-getAverageGrade([45, 48, 50, 52, 100, 54, 56, 58, 59]);
+getAverageGrade([92, 91, 90, 94, 89, 93]); //returns "A-"!
+getAverageGrade([84, 89, 85, 100, 91, 88, 79]); //returns "B+"!
+getAverageGrade([63, 69, 65, 66, 71, 64, 65]); //returns "D"! **
+getAverageGrade([97, 98, 99, 100, 96, 97, 98, 99, 100]); //returns "A+"!
+getAverageGrade([75, 100, 88, 79, 80, 78, 64, 60]); //returns "C+"!
+getAverageGrade([45, 48, 50, 52, 100, 54, 56, 58, 59]); //returns "F"!
