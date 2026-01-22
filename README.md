@@ -142,13 +142,11 @@ Project Link: [GitHub](https://github.com/malloryjoy/daily-diddly-donezo)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/malloryjoy/daily.svg?style=for-the-badge
-[contributors-url]: https://github.com/malloryjoy
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[contributors-shield]: https://img.shields.io/badge/Contributors-395F23?style=for-the-badge&logo=github&logoColor=white
+[contributors-url]: https://github.com/malloryjoy/daily-diddly-donezo
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-C6888C?style=for-the-badge
 [linkedin-url]: https://www.linkedin.com/in/malloryjoy/
 [product-screenshot]: screenshot.png
-[Typescript.io]: https://img.shields.io/badge/Typescript-000000?style=for-the-badge&logo=typescript&logoColor=white
-
 [Javascript.io]: https://img.shields.io/badge/Javascript-395F23?style=for-the-badge&logo=javascript&logoColor=white
 [Javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [React.io]: https://img.shields.io/badge/React-C6888C?style=for-the-badge&logo=react&logoColor=black
