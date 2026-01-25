@@ -8,9 +8,9 @@ Letter	Number Range
 "O"	61-75 */
 
 
-function getBingoLetter(n) {
-    let ntoL="";
-    if (n >= 1  && n <= 15){
+function getBingoLetter(n) { //declare function to solve problem 
+    let ntoL=""; //declare value that will host answer 
+    if (n >= 1  && n <= 15){ //if-else statement for each letter based on the number 
       ntoL = "B";
     } else if (n >= 16 && n <= 30){
       ntoL = "I";
@@ -21,10 +21,10 @@ function getBingoLetter(n) {
     } else if (n >= 61 && n <= 75){
       ntoL = "O";
     } else {
-      ntoL = "Error";
+      ntoL = "Error"; //catches errors 
     }
-    console.log(n + ":" + ntoL);
-    return ntoL;
+    console.log(n + ":" + ntoL); //tests and confirms function works!
+    return ntoL; //returns answer 
   }
   
   getBingoLetter(75) //should return "O".
