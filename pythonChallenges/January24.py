@@ -1,6 +1,16 @@
+##Given a number, return the bingo letter associated with it (capitalized). Bingo numbers are grouped as follows:
+
+##Letter	Number Range
+##"B"	1-15
+##"I"	16-30
+##"N"	31-45
+##"G"	46-60
+##"O"	61-75 
+
+
 def get_bingo_letter(n):
-    ntoL = "";
-    if n >= 1 and n <= 15:
+    ntoL = ""; ## Creates empty variable 
+    if n >= 1 and n <= 15: ## If/elif statement to return the proper letter for the corresponding number 
         ntoL = "B";  
     elif n >= 16 and n <= 30:
         ntoL = "I";
@@ -11,9 +21,9 @@ def get_bingo_letter(n):
     elif n >= 61 and n <= 75:
         ntoL = "O";
     else:
-        ntoL = "ERROR";
-    print(ntoL);
-    return ntoL
+        ntoL = "ERROR"; ## Catches error 
+    print(ntoL); ## Checks to confirm answer works 
+    return ntoL ## Returns correct value 
 
 
 get_bingo_letter(75); ##should return "0".
