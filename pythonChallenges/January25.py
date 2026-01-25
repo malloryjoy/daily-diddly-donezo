@@ -22,3 +22,10 @@ def scale_image(size, scale): #creates function that takes size and scale as par
     
 
     return sizeConvert #returns sizeConvert as correct answer 
+
+
+
+scale_image("800x600", 2) ##should return "1600x1200".
+scale_image("100x100", 10) ##should return "1000x1000".
+scale_image("1024x768", 0.5) ##should return "512x384".
+scale_image("300x200", 1.5) ##should return "450x300".
