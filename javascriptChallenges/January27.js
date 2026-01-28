@@ -5,19 +5,19 @@
 For example, given 1769472000000, a timestamp for January 27th, 2026, return "odd" because the day number (27) 
 is an odd number.*/
 
-function oddOrEvenDay(timestamp) {
-    const dateObject = new Date(timestamp);
-    //console.log(dateObject);
-    let tsConvert = dateObject.getUTCDate();
+function oddOrEvenDay(timestamp) {  //takes timestamp as a parameter 
+    const dateObject = new Date(timestamp); //creates new Date object that converts timestamp into a date
+    console.log(dateObject); //displays dateObject to confirm date converted correctly
+    let tsConvert = dateObject.getUTCDate(); //creates value that isolates the date in UTC format
   
-    let dateDivisible = "";
-      if (tsConvert%2 == 0){
+    let dateDivisible = ""; //creates empty dateDivisible value
+      if (tsConvert%2 == 0){ //if then statement determining whether date number is odd or even, returning string indicating such
         dateDivisible="even"
       } else {
         dateDivisible="odd"
       }
-      console.log(dateDivisible)
-    return dateDivisible;
+      console.log(dateDivisible) //displays answer to confirm number value is correct 
+    return dateDivisible; //returns value 
   }
   
   
