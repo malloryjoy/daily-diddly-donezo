@@ -1,10 +1,10 @@
 /*Given an array that contains nested arrays, return a new array with all values flattened into a single, 
 one-dimensional array. Retain the original order of the items in the arrays.*/ 
 
-function flatten(arr) {
-    let arrFlat = arr.flat(Infinity);
-      console.log(arrFlat);
-      return arrFlat
+function flatten(arr) { //create function establishing a provided array as a parameter 
+    let arrFlat = arr.flat(Infinity); //establishes variable assigned to the flattened array - using Infinity as an additional parameter to fully flatten each array
+      console.log(arrFlat); //checks/confirms that answer is correct
+      return arrFlat //returns correct answer 
   }
   
   flatten([1, [2, 3], 4]) //should return [1, 2, 3, 4].
