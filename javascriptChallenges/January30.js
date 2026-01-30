@@ -13,19 +13,19 @@ because it's on the starting row and needs to be in ascending order.
 
 */
 
-function findPawnMoves(position) {
-    let chessSpot = position.split("")
-    //console.log(chessSpot)
-    let pawnMove = parseInt(chessSpot[1]);
-    //console.log(pawnMove);
-    let myPosition = [];
-    if (pawnMove == 2){
+function findPawnMoves(position) { //takes original position as a parameter 
+    let chessSpot = position.split("") //splits position into an array
+    console.log(chessSpot) //checks that chessSpot has split the pawn position correctly
+    let pawnMove = parseInt(chessSpot[1]); //establishes pawnMove as the original position/number as an integer
+    console.log(pawnMove);
+    let myPosition = []; //checks that chessSpot has the correct value
+    if (pawnMove == 2){ //if then statement for confirming chessSpot will return two  values if the pawn is in the second row
       myPosition = [chessSpot[0]+3, chessSpot[0]+4]
-    } else{
+    } else{ //confirms that chessSpot will confirm just the first spot plus 1 
       myPosition = [chessSpot[0] + (pawnMove+1)]
     }
-    console.log(myPosition);
-    return myPosition;
+    console.log(myPosition); //confirms that the answer is correct
+    return myPosition; //returns correct answer 
   }
   
   findPawnMoves("D4"); //should return ["D5"]
