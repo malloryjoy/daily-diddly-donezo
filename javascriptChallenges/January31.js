@@ -18,16 +18,15 @@ Zodiac signs are based only on the month and day, you can ignore the year. */
 
 
 
-function getSign(dateStr) {
-    let dateStrArr = dateStr.split("-");
-    let date = parseInt(dateStrArr[2]);
-    let month = dateStrArr[1];
-    //console.log(month)
-    //console.log(dateStrArr)
-    //console.log(date);
-    //console.log(month);
-    let starSign = "";
-    if ((month === "01" && date >= 20) || (month === "02" && date <= 18)){
+function getSign(dateStr) { //function that takes a string date as a parameter 
+    let dateStrArr = dateStr.split("-"); //function that splits the string into an array
+    let date = parseInt(dateStrArr[2]); //function that converts date value into a comparable integer 
+    let month = dateStrArr[1]; //function that establishes the month as the provided value in the array 
+    //console.log(dateStrArr) - checks that string was properly converted to an array
+    //console.log(date); - checks that the right date was selected 
+    //console.log(month) - checks that the right month was selected 
+    let starSign = ""; //creates empty variable in which we can place the correct answer
+    if ((month === "01" && date >= 20) || (month === "02" && date <= 18)){ //if then statement for each zodiac option
       starSign = "Aquarius";
     } else if ((month === "02" && date >= 19) || (month === "03" && date <= 20)){
       starSign = "Pisces";
@@ -52,10 +51,10 @@ function getSign(dateStr) {
     } else if ((month === "12" && date >= 22) || (month === "01" && date <= 19)){
       starSign = "Capricorn";
     } else{
-      starSign = "Something is a miss here!"
+      starSign = "Something is a miss here!" //hypothetical error catch in case the provided string format is not correct
     }
-    console.log(starSign);
-    return starSign;
+    console.log(starSign); //checks the right answer was generated  
+    return starSign; //returns correct answer 
   }
   
   getSign("2026-01-31") //should return "Aquarius"
