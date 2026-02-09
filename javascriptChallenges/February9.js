@@ -18,10 +18,10 @@ Otherwise, return "No Medal"
 */
 
 function skiJumpMedal(distancePoints, stylePoints, windComp, kPointBonus) {
-    let myScore = distancePoints + stylePoints + windComp + kPointBonus;
-    //console.log(myScore)
-    let myMedal = "";
-    if (myScore > 180) {
+    let myScore = distancePoints + stylePoints + windComp + kPointBonus; //created variable to hold my score
+    //console.log(myScore), checks that my score is correct
+    let myMedal = ""; //creates empty value for whether or not I medal 
+    if (myScore > 180) { //if then comparing my score against the three highest provided scores, providing my medal status against these numbers
       myMedal = "Gold"
     } else if (myScore > 175.0 && myScore < 180){
       myMedal = "Silver"
@@ -30,8 +30,8 @@ function skiJumpMedal(distancePoints, stylePoints, windComp, kPointBonus) {
     } else{
       myMedal = "No Medal"
     }
-    console.log(myMedal)
-    return myMedal;
+    console.log(myMedal) //confirms that I have the correct medal status 
+    return myMedal; //returns my medal status 
   }
   
   skiJumpMedal(125.0, 58.0, 0.0, 6.0) //should return "Gold".
