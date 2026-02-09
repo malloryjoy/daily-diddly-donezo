@@ -17,10 +17,10 @@
 ##Otherwise, return "No Medal"
 
 def ski_jump_medal(distance_points, style_points, wind_comp, k_point_bonus):
-    my_score = distance_points + style_points + wind_comp + k_point_bonus
-    print(my_score)
-    my_medal = ""
-    if my_score > 180:
+    my_score = distance_points + style_points + wind_comp + k_point_bonus ##created variable to hold my score
+    print(my_score) ##confirms correct value for my score 
+    my_medal = "" ##creates value for my medal status 
+    if my_score > 180: ##compares my score against first second and third highest values 
        my_medal = "Gold"
     elif my_score > 175.0 and my_score < 180:
        my_medal = "Silver"
@@ -28,8 +28,8 @@ def ski_jump_medal(distance_points, style_points, wind_comp, k_point_bonus):
        my_medal = "Bronze"
     else:
        my_medal = "No Medal"
-    print(my_medal)
-    return my_medal
+    print(my_medal) ##confirms my answer is the correct answer 
+    return my_medal ##returns the correct answer
 
 
   
