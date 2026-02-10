@@ -8,13 +8,13 @@
 
 
 function getRelativeResults(results) {
-    function kaboot(result){ 
+    function kaboot(result){  //creates function that converts string value into a numerical value, the time indicated in the string in seconds 
       return result.split(':')
     .reduce((acc, time) => (60 * acc) + +time, 0)
     }
-    const totalSecondsArray = results.map(kaboot);
-    //console.log(totalSecondsArray)
-    function magicMath(arr){
+    const totalSecondsArray = results.map(kaboot); //creates new array that applies the above 'kaboot' function to each item in the array 
+    //console.log(totalSecondsArray), to check the array looks right
+    function magicMath(arr){ // function that creates an array by subtracting the first value (the winner's value) in the array from each other value in the array
       return arr.map((currentValue, index, array) => {
       if (index === 0) {
         return 0;
@@ -24,25 +24,24 @@ function getRelativeResults(results) {
       }
     });
     }
-    const differences = magicMath(totalSecondsArray)
-    //console.log(differences)
+    const differences = magicMath(totalSecondsArray) //gives the array created by the preceding magicMath function a name
+    //console.log(differences), to confirm array was created correctly
   
-    function formatMe(totalSeconds) {
+    function formatMe(totalSeconds) { //converts the difference in times into minutes and seconds 
       const minutes = Math.floor(totalSeconds / 60);
       const seconds = totalSeconds % 60;
   
-      // Use padStart() to add a leading zero if the number is less than 10
-      const formattedMinutes = String(minutes).padStart(1, '0');
-      const formattedSeconds = String(seconds).padStart(2, '0');
+      const formattedMinutes = String(minutes).padStart(1, '0'); //converts the minutes and seconds BACK into a string value 
+      const formattedSeconds = String(seconds).padStart(2, '0');//converts the minutes and seconds BACK into a string value 
   
-      return `+${formattedMinutes}:${formattedSeconds}`;
+      return `+${formattedMinutes}:${formattedSeconds}`; //adds formatting to each value 
   }
-    const finalResults = differences.map(formatMe);
-    let capitalValue = "0";
+    const finalResults = differences.map(formatMe); //creates FINAL array of each "difference" array value with the applied conversion
+    let capitalValue = "0"; //the above function will make the first value in the final array "0:00" when it needs to just be zero. This and the following line change that value to just be "0"
     finalResults[0] = capitalValue
-    console.log(finalResults);
-    return finalResults
-      //return results;
+    console.log(finalResults); //confirms that the finalResults array is in fact FINAL and CORRECT 
+    return finalResults //returns final, correct answer
+      
   }
     
   
