@@ -10,21 +10,20 @@
 
 
 function computeScore(judgeScores, ...penalties) {
-    let sortScores = judgeScores.sort((a, b) => b - a);
-    //console.log(sortScores)
-    //new array from sorting all the judgeScores, and then remove the first and the last one 
-    let newScores = sortScores.slice(1);
-    //console.log(newScores)
-    let realNewScores = newScores.slice(0,-1)
-    //console.log(realNewScores)
+    let sortScores = judgeScores.sort((a, b) => b - a); //sorts scores from highest to lowest
+    //console.log(sortScores), to check the scores are in the right place
+    let newScores = sortScores.slice(1); //Creates an array that removes the first value in the array
+    //console.log(newScores), to check the right array values populate
+    let realNewScores = newScores.slice(0,-1) //creates new array that removes the lowest score 
+    //console.log(realNewScores), checks the new array has the right values 
     const sum = realNewScores.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
-    0)
-    //console.log(sum)
-    const penaltyTotal = penalties.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    let finalScores = sum - penaltyTotal;
-    console.log(finalScores)
-    return finalScores;
+    0) //value of all the array values added together 
+    //console.log(sum), confirms the right sum value
+    const penaltyTotal = penalties.reduce((accumulator, currentValue) => accumulator + currentValue, 0); //creates variable that sums up all penalty values 
+    let finalScores = sum - penaltyTotal; //creates value of sum of scores minus the penalty total
+    console.log(finalScores) //checks the right answer was generated
+    return finalScores; //returns the correct aswer
   }
   
   computeScore([10, 8, 9, 6, 9, 8, 8, 9, 7, 7], 1) //should return 64
