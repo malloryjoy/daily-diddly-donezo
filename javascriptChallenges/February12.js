@@ -6,23 +6,23 @@
 
 
 function largestDifference(skater1, skater2) {
-    let lap1Diff = Math.abs(skater1[0] - skater2[0]);
-    //console.log(lap1Diff)
-    let lap2Diff = Math.abs(skater1[1] - skater2[1]);
-    //console.log(lap2Diff)
-    let lap3Diff = Math.abs(skater1[2] - skater2[2]);
-    //console.log(lap3Diff)
-    let lap4Diff = Math.abs(skater1[3] - skater2[3]);
-    //console.log(lap4Diff)
-    let lap5Diff = Math.abs(skater1[4] - skater2[4]);
-    //console.log(lap5Diff)
+    let lap1Diff = Math.abs(skater1[0] - skater2[0]); //Compares lap 1 results for each skater, absoluting them to a positive value
+    //console.log(lap1Diff), confirms the right value 
+    let lap2Diff = Math.abs(skater1[1] - skater2[1]); //Compares lap 2 results for each skater, absoluting them to a positive value
+    //console.log(lap2Diff), confirms the right value
+    let lap3Diff = Math.abs(skater1[2] - skater2[2]); //Compares lap 3 results for each skater, absoluting them to a positive value
+    //console.log(lap3Diff), confirms the right value
+    let lap4Diff = Math.abs(skater1[3] - skater2[3]); //Compares lap 4 results for each skater, absoluting them to a positive value
+    //console.log(lap4Diff), confirms the right value 
+    let lap5Diff = Math.abs(skater1[4] - skater2[4]); //Compares lap 5 results for each skater, absoluting them to a positive value
+    //console.log(lap5Diff), confirms the right value 
    
-    let lapArray = [lap1Diff, lap2Diff, lap3Diff, lap4Diff, lap5Diff];
-    const maxValue = Math.max(...lapArray);
-    const maxIndex = lapArray.indexOf(maxValue);
-    let results = maxIndex+1
-    console.log(results)
-   return results;
+    let lapArray = [lap1Diff, lap2Diff, lap3Diff, lap4Diff, lap5Diff]; //Places each value into a new array 
+    const maxValue = Math.max(...lapArray); //determines the largest value in the array 
+    const maxIndex = lapArray.indexOf(maxValue); //confirms the index of the largest value 
+    let results = maxIndex+1 //adds 1 to the index value to give the correct Lap value (ie, not lap 0!)
+    console.log(results) //confirms the result is correct
+   return results; //returns final answer 
    }
    
    
