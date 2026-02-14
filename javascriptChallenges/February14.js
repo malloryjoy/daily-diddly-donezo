@@ -17,25 +17,27 @@
 // "Medium" if the total is 101-200
 // "Hard" if the total is over 200
 
+//This one was a doozy. For loops are tricky!
+
 function getDifficulty(track) {
-    let totalPoints = 0;
+    let totalPoints = 0; //establishes totalPoints as a counter 
   
-    for (let i = 0; i < track.length; i++) {
-      const char = track[i];
+    for (let i = 0; i < track.length; i++) { //for loop for letters in the track string
+      const char = track[i]; 
   
-      if (char === 'L' || char === 'R') {
+      if (char === 'L' || char === 'R') { //if the character in the string is either L or R
         totalPoints += 5; // all L/Rs get 5 points
       }
       // straight 'S' is 0 points, do nothing
     }
   
-    // now count direction changes and add extra 10 per change
-    for (let i = 0; i < track.length - 1; i++) {
+    
+    for (let i = 0; i < track.length - 1; i++) { //second for loop for letters in the string to account for back-to-back turns and compare
       const first = track[i];
       const second = track[i + 1];
   
-      if ((first === 'L' && second === 'R') || (first === 'R' && second === 'L')) {
-        totalPoints += 10; // add extra to make it 15 total per change
+      if ((first === 'L' && second === 'R') || (first === 'R' && second === 'L')) { 
+        totalPoints += 10; // add extra to make it 15 total per change if two characters in the string are back to back L or R
       }
     }
   
