@@ -15,21 +15,21 @@
 
 
 function getFastestSpeed(times) {
-    let seg1 = parseFloat((320 / times[0]).toFixed(2));
-    //console.log(seg1)
-    let seg2 = parseFloat((280 / times[1]).toFixed(2));
-    let seg3 = parseFloat((350 / times[2]).toFixed(2));
-    let seg4 = parseFloat((300 / times[3]).toFixed(2));
-    let seg5 = parseFloat((250/times[4]).toFixed(2));
-    let segArray = [seg1, seg2, seg3, seg4,seg5]
-    //console.log(segArray);
-    const X = Math.max(...segArray);
-    const maxIndex = segArray.indexOf(X);
-    let Y = maxIndex+1
+    let seg1 = parseFloat((320 / times[0]).toFixed(2)); //Gets segment time, rounded to two decimal points, converted to a number
+    //console.log(seg1), checks the math worked 
+    let seg2 = parseFloat((280 / times[1]).toFixed(2)); //Gets segment time, rounded to two decimal points, converted to a number
+    let seg3 = parseFloat((350 / times[2]).toFixed(2)); //Gets segment time, rounded to two decimal points, converted to a number
+    let seg4 = parseFloat((300 / times[3]).toFixed(2)); //Gets segment time, rounded to two decimal points, converted to a number
+    let seg5 = parseFloat((250/times[4]).toFixed(2)); //Gets segment time, rounded to two decimal points, converted to a number
+    let segArray = [seg1, seg2, seg3, seg4,seg5] //Creates an array of the segment times 
+    //console.log(segArray); confirms array has correct numbers
+    const X = Math.max(...segArray); //Creates a variable that gets the largest value in the array
+    const maxIndex = segArray.indexOf(X); //Creates the variable that gets the index (or segment) with the largest number
+    let Y = maxIndex+1 //Gets the "true" lap segment, as lap [0]  works as an index but not truly as a lap
   
-    let lugeSpeed = `The luger's fastest speed was ${X} m/s on segment ${Y}.`
-    console.log(lugeSpeed)
-    return lugeSpeed;
+    let lugeSpeed = `The luger's fastest speed was ${X} m/s on segment ${Y}.` //creates variable that displays the correct answer 
+    console.log(lugeSpeed) //confirms the right answer 
+    return lugeSpeed; //returns the correct answer 
   }
   
   
