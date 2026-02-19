@@ -12,13 +12,13 @@
 
 
 def avalanche_risk(snow_depth, slope):
-    avRisk ="";
-    if slope =="Gentle" or snow_depth == "Shallow":
+    avRisk ="" # #set up element to hold the avalanche risk 
+    if slope =="Gentle" or snow_depth == "Shallow": ## if statement to confirm the avalanche risk, based on whether or not the slope is gentle or the snow depth is shallow
         avRisk = "Safe"
     else: 
         avRisk = "Risky"
-    print(avRisk)
-    return avRisk
+    print(avRisk) ## logs/confirms correct answer
+    return avRisk ## returns correct answer
 
 
 avalanche_risk("Shallow", "Gentle") ##should return "Safe".
