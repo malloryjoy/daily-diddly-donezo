@@ -4,16 +4,16 @@
 
 
 function isFlat(arr) {
-    const hasNested = arr.some(element => Array.isArray(element));
-  //console.log(hasNested); 
-  let myAnswer = "";
-  if (hasNested){
+    const hasNested = arr.some(element => Array.isArray(element)); //determines if any of the items in an array are also an array
+  //console.log(hasNested), logs whether or not arrays exist within the array
+  let myAnswer = ""; //creates variable to hold correct answer 
+  if (hasNested){ //if statement to place the status of arrays in a boolean
     myAnswer = false;
   } else{
     myAnswer = true;
   };
-   console.log(myAnswer);
-   return myAnswer
+   console.log(myAnswer); //confirms correct answer
+   return myAnswer //returns correct answer 
     
   }
   
