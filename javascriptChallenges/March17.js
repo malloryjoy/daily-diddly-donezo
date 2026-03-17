@@ -12,9 +12,9 @@
 // If they haven't reached the first milestone, return "Newlyweds".
 
 
-function getMilestone(years) {
-    let milestone = "";
-    if (years < 1){
+function getMilestone(years) { 
+    let milestone = ""; //create empty variable to hold milestone value
+    if (years < 1){ //create if else statements for each milestone 
       milestone = "Newlyweds"
     } else if (years >= 1 && years < 5){
       milestone = "Paper"
@@ -33,8 +33,8 @@ function getMilestone(years) {
     } else if (years >= 70){
       milestone ="Platinum"
     }
-    console.log(milestone)
-    return milestone;
+    console.log(milestone) //log correct answer 
+    return milestone; //return correct answer 
   }
   
   

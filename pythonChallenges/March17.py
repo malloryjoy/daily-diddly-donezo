@@ -13,8 +13,8 @@
 
 
 def get_milestone(years):
-    milestone = ""
-    if years < 1:
+    milestone = "" ##create empty variable to hold milestone value
+    if years < 1: ##create if else statements for each milestone 
         milestone = "Newlyweds"
     elif years >= 1 and years < 5:
         milestone = "Paper"
@@ -33,8 +33,8 @@ def get_milestone(years):
     elif years >= 70:
         milestone = "Platinum" 
 
-    print(milestone)
-    return milestone
+    print(milestone) ##print correct answer
+    return milestone ##return correct answer 
 
 
 
