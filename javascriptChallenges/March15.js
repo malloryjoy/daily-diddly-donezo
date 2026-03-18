@@ -16,11 +16,11 @@
 
 
 function getCapturedValue(pieces) {
-    let answer = "";
-    if (!pieces.includes("K")){
+    let answer = ""; // Establishes variable to hold the correct answer 
+    if (!pieces.includes("K")){ // Establishes if else statement depending on whether or not the array has a "King" in it
       answer = "Checkmate"
     } else {
-    pieces.forEach((item, index) => {
+    pieces.forEach((item, index) => { // For each item in the pieces array, replace the letter with the corresponding point
       if (item === "P") {
           pieces[index] = 1;
       } else if (item ==="R" ){
@@ -33,13 +33,13 @@ function getCapturedValue(pieces) {
         pieces[index] = 0;
       }
     })
-    //console.log(pieces);
-    const sum = pieces.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    //console.log(sum);
-    answer = 39 - sum;
+    //console.log(pieces); confirms pieces has been reassigned 
+    const sum = pieces.reduce((accumulator, currentValue) => accumulator + currentValue, 0); //Establishes variable that holds the sum of the variables in the array
+    //console.log(sum); confirms sum is the corect amount 
+    answer = 39 - sum; // Establishes variable that holds the total points available (39) minus the total points in the array
     }
-    console.log(answer)
-    return answer
+    console.log(answer) // Confirms correct answer 
+    return answer // Returns correct answer 
   }
   
   
