@@ -1,15 +1,15 @@
 //Given two integers, determine if you can evenly divide the first one by the second one.
 
 function isEvenlyDivisible(a, b) {
-    let answer = "";
-    if (a%b == 0 ){
-      answer = true;
+    let answer = ""; // Creates variable to hold the boolean true/false 
+    if (a%b == 0 ){  // Sets up if/else that establishes a Boolean depending on the divisibility of the provided values
+      answer = true;  // Establishes answer as true if the numbers are divisible 
     } else {
-      answer = false;
+      answer = false; // Establishes answer as false if the numbers are not divisible 
     }
-    console.log(answer)
-    return answer;
- 
+    console.log(answer) // Logs to confirm the correct answer 
+    return answer; // Returns the correct answer 
+  
 }
 
 

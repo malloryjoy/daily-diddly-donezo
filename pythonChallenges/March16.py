@@ -1,12 +1,12 @@
 ##Given two integers, determine if you can evenly divide the first one by the second one.
 
 def is_evenly_divisible(a, b):
-    if a%b == 0:
-        answer = True;
+    if a%b == 0: ## sets up if/else that establishes a Boolean depending on the divisibility of the provided values 
+        answer = True
     else:
-        answer = False;
-    print(answer)
-    return answer
+        answer = False
+    print(answer) ## prints to confirm the correct answer 
+    return answer ## returns the correct answer 
 
 
 
