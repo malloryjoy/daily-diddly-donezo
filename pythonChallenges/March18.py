@@ -4,19 +4,19 @@
 ##Separators can be commas (","), exclamation points ("!"), question marks ("?"), colons (":"), or semi-colons (";").
 
 def largest_number(s):
-    res = s.replace("?", ",")
-    res2 = res.replace("!",",")
-    res3 = res2.replace(":",",")
-    res4 = res3.replace(";",",")
-    new_text = res4
-    ##print(new_text)
-    new_list = new_text.split(",");
-    ##print(new_list)
-    nums = [float(x) for x in new_list]
-    largest_num = max(nums)
-    ##print(new_list[0])
-    print(largest_num)
-    return largest_num
+    res = s.replace("?", ",") ## Creates a variable that holds the original string, but replaces all question marks with a comma 
+    res2 = res.replace("!",",") ## Creates a variable that holds the new string, but replaces all exclamation marks with a comma
+    res3 = res2.replace(":",",") ## Creates a variable that holds the newer string, but replaces all colons with a comma
+    res4 = res3.replace(";",",") ## Creates a variable that holds the newest string, but replaces all semicolons with a comma
+    new_text = res4 ## Creates a variable that holds the final version of the fully replaced string 
+    ##print(new_text), to confirm the string has been properly converted 
+    new_list = new_text.split(","), ## Creates an array of the newest string, splitting into individual values by comma placement
+    ##print(new_list), to confirm the string has been properly converted into an array 
+    nums = [float(x) for x in new_list] ## Converts the items in the list to be full numerical values, not stringified numbers 
+    largest_num = max(nums) ## Creates a variable that holds the largest number in the array
+    
+    print(largest_num) ## Confirms the largest number has been selected 
+    return largest_num ## Returns the largest number as the final answer 
    
 
 

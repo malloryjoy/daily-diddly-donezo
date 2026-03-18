@@ -7,13 +7,13 @@
 function largestNumber(str) {
 
 
-    let newStr = str.replace(/[,\!\?\:\;]/g, "_")
-    //console.log(newStr);
-    let compArray = newStr.split("_");
-    //console.log(compArray);
-    let largestNum = Math.max(...compArray);
-    console.log("The largest number is: "+ largestNum)
-    return largestNum;
+    let newStr = str.replace(/[,\!\?\:\;]/g, "_") // Replaces all instances of !?:; with _ 
+    //console.log(newStr); to confirm new String is properly converted 
+    let compArray = newStr.split("_"); //splits the string into an array 
+    //console.log(compArray); to confirm array has been properly split
+    let largestNum = Math.max(...compArray); //Creates a value that holds the largest number in the array 
+    console.log("The largest number is: "+ largestNum) // Confirms the largest number in the array 
+    return largestNum; //Returns correct answer 
   }
   
   
