@@ -11,45 +11,46 @@
 ## There is a minimum fee of $5 (only used if the total would be less than $5).
 ## Return the total cost in the format "$cost", "$5" for example.
 
-import math
-from datetime import date, time, datetime
+import math 
+from datetime import date, time, datetime ## import necessary libraries, ie math and dates
 
 def calculate_parking_fee(park_time, pickup_time):
-    start_array = park_time.split(":")
-    start_hour = int(start_array[0])
-    start_minute = int(start_array[1])
-    pickup_array = pickup_time.split(":")
-    specific_date = date(2026, 3, 23)
-    specific_start_time = time(start_hour,start_minute)
-    ##print(specific_start_time)
-    start_date = datetime.combine(specific_date,specific_start_time)
-    ##print(start_date)
-    end_hour = int(pickup_array[0])
-    end_minute = int(pickup_array[1])
-    specific_end_time = time(end_hour,end_minute)
-    new_date = date(2026, 3, 24)
-    if start_hour > end_hour or (start_hour == end_hour and start_minute > end_minute):
-        end_date = datetime.combine(new_date,specific_end_time)
+    start_array = park_time.split(":") ## create an array from splitting the hours and minutes of the park time 
+    start_hour = int(start_array[0]) ## creates an integer value for the hours of the start time
+    start_minute = int(start_array[1]) ## creates an integer value for the minutes of the start time
+    pickup_array = pickup_time.split(":") ## create an array from splitting the hours and minutes of the pickup time 
+    specific_date = date(2026, 3, 23) ## creates a date to use for the start day
+    specific_start_time = time(start_hour,start_minute) ## creates specific time for the start of the parking use 
+    ## print(specific_start_time), confirm correct specific time
+    start_date = datetime.combine(specific_date,specific_start_time) ## creates start date object for the specific date and start time 
+    ## print(start_date), confirms correct start date
+    end_hour = int(pickup_array[0]) ## creates an integer value for the hours of the pickup time
+    end_minute = int(pickup_array[1]) ## creates an integer value for the minutes of the pickup time
+    specific_end_time = time(end_hour,end_minute) ## creates specific time for the end of the parking use 
+    new_date = date(2026, 3, 24) ## creates end date object for the specific date and end time
+    if start_hour > end_hour or (start_hour == end_hour and start_minute > end_minute): ## if statement for creating an end date based on if the parking occurred overnight
+        end_date = datetime.combine(new_date,specific_end_time) ## creates date object using the next day if parking occurred overnight 
     else: 
-        end_date = datetime.combine(specific_date,specific_end_time)
-    ##print(end_date)
+        end_date = datetime.combine(specific_date,specific_end_time) ## creates date object using the same day if parking did not occur overnight 
+    ##print(end_date), confirms correct end date 
 
-    difference = end_date - start_date
-    hours_difference = math.ceil(difference.total_seconds() / 3600.0)
-    ##print(hours_difference)
-    start_day = start_date.strftime("%d")
-    end_day = end_date.strftime("%d")
-    cost_num = "",
-    if hours_difference <=1:
-        cost_num = 5 
+    difference = end_date - start_date ## calculates the duration of time between the start time and pickup time for the car  
+    hours_difference = math.ceil(difference.total_seconds() / 3600.0) ## converts that duration of time into hours, rounded up to the nearest whole hour 
+    ##print(hours_difference), confirms correct horu time 
+    start_day = start_date.strftime("%d") ## gets date of starting time 
+    end_day = end_date.strftime("%d") ## gets date of ending time 
+    cost_num = "", ## creates empty variable for the cost of parking 
+    if hours_difference <=1: ## if statement to determine cost of parking, with the cost being five dollars for time duration under one hour 
+        cost_num = 5  
     else:
-        if start_day != end_day:
-            cost_num = ((3 * hours_difference) + 10)
+        if start_day != end_day: ## continued/nested if statement if the parking is overnight
+            cost_num = ((3 * hours_difference) + 10) ## if the parking is overnight, an additional ten dollars is added 
         else:
-            cost_num = 3 * hours_difference
-    cost = f"${cost_num}"
-    print(cost)
-    return cost
+            cost_num = 3 * hours_difference ## if the parking is not overnight, the total dollar amount is 3 * number of hours between start and end time 
+    cost = f"${cost_num}" ## wraps cost in proper formatting 
+    print(cost) ## confirms correct price 
+    return cost ## returns correct price 
+    
     
     
     
