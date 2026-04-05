@@ -19,8 +19,8 @@ function isValidEquation(equation) {
     } else{
       myAnswer = false; //returns false if the answer provided and the answer calculated are different
     }
-    console.log(myAnswer);
-    return myAnswer;
+    console.log(myAnswer); //confirms answer is correct
+    return myAnswer; //returns the correct answer 
   }
   
   
