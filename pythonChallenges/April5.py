@@ -6,22 +6,22 @@
 ## Follow standard order of operations: multiplication and division are evaluated before addition and subtraction, from left-to-right.
 
 def is_valid_equation(equation):
-    my_answer = False 
-    before, separator, after = equation.partition("=")
-    ##print(before)
-    before_math = eval(before)
-    ##print(before_math)
-    after_math = int(after)
-    ##print(after_math)
-    if before_math == after_math:
-        my_answer = True
+    my_answer = False ## creates variable to hold Boolean answer 
+    before, separator, after = equation.partition("=") ## separates the given equation by the equal sign
+    ##print(before), logs/confirms the before only shows the equation WITHOUT the provided answer
+    before_math = eval(before) ## calculates the equation, creates a variable that holds the answer to this equation
+    ##print(before_math), ## logs/confirms the correct answer of the provided equation
+    after_math = int(after) ## converts the string answer in the provided equation into an integer
+    ##print(after_math), logs/confirms the provided answer in the string
+    if before_math == after_math: ## creates if/else to compare calculated answer and provided answer 
+        my_answer = True ## if answers match, my_answer is True 
     else:
-        my_answer = False
-    print(my_answer)
+        my_answer = False ## if provided answer is different than the calculated answer, my_answer is False
+    print(my_answer) ## logs correct answer 
 
 
 
-    return my_answer
+    return my_answer ## returns correct answer 
 
 
 
