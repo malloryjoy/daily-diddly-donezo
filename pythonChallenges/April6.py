@@ -13,14 +13,14 @@
 
 
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone #import date library
 
 
-def get_day_of_week(timestamp):
-    dt = datetime.fromtimestamp(timestamp / 1000.0, tz=timezone.utc)
-    print(dt)
-    weekday = dt.strftime('%A')
-    print(weekday)
-    return weekday
+def get_day_of_week(timestamp): 
+    dt = datetime.fromtimestamp(timestamp / 1000.0, tz=timezone.utc) #variable to hold converted timestamp into date 
+    print(dt) #confirmed date is correct 
+    weekday = dt.strftime('%A') #create variable to hold the day of the week of the date, converted into a string
+    print(weekday) #confirms correct answer 
+    return weekday #returns correct answer
 
 
