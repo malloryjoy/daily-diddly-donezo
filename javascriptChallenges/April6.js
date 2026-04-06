@@ -10,12 +10,12 @@
 // Be sure to ignore time zones.
 
 function getDayOfWeek(timestamp) {
-  const date = new Date(timestamp);
-  //console.log(date.toString())
-  let dayOfWeek = date.getUTCDay();
-  //console.log(dayOfWeek)
-  let day = "";
-  if (dayOfWeek == 1){
+  const date = new Date(timestamp); // create variable that holds a new Date based on provided timestamp
+  //console.log(date.toString()), confirms the date was converted correctly 
+  let dayOfWeek = date.getUTCDay(); // create variable that holds the day of the week 
+  //console.log(dayOfWeek) // confirms weekday is correct  
+  let day = ""; // creates variable that holds stringified date
+  if (dayOfWeek == 1){ // if statement of each day of the week, with the number converted to the corresponding day of the week
     day = "Monday"
   }  else if (dayOfWeek == 2){
     day = "Tuesday"
@@ -36,8 +36,8 @@ function getDayOfWeek(timestamp) {
   }else {
     day = "ERROR"
   }
-  console.log(day)
-  return day;
+  console.log(day) // confirms correct answer
+  return day; // returns correct answer 
 }
 
 
