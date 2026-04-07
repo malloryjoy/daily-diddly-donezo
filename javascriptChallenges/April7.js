@@ -6,23 +6,23 @@
 
 
 function palindromeLocator(str) {
-    const reversed = str.split("").reverse().join("");
-    //console.log(reversed);
-    let myAnswer = "";
-    if (reversed !== str){
-      myAnswer = "none"
+    const reversed = str.split("").reverse().join(""); //creates variable that reverses string
+    //console.log(reversed); confirms string has been reversed 
+    let myAnswer = ""; //creates blank variable to hold correct answer 
+    if (reversed !== str){ //if else statement to determine if word provided is a palindrome 
+      myAnswer = "none" //sets the correct answer as "none" if it is not a palindrome 
     } else{
-      const length = str.length;
-      const middleIndex = Math.floor(length / 2);
-      if (length % 2 !== 0) {
+      const length = str.length; //gets the number of characters in the palindrome 
+      const middleIndex = Math.floor(length / 2); //creates a variable that holds the value of the length divided by 2
+      if (length % 2 !== 0) { //if else statement to determine if there is an "even" split in the palindrome 
       
-      myAnswer = str[middleIndex]; 
+      myAnswer = str[middleIndex];  //if the palindrome is an even split, the answer is the index of the midway point of the string 
     } else {
-      myAnswer = str[middleIndex - 1] + str[middleIndex];
+      myAnswer = str[middleIndex - 1] + str[middleIndex]; //if the palindrome is not an even split, the answer is the index of the midway point of the string, minus 1, added to the midway point of the string
     }
     }
-    console.log(myAnswer)
-    return myAnswer;
+    console.log(myAnswer) //confirms correct answer 
+    return myAnswer; //returns correct answer
   }
   
   
