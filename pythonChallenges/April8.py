@@ -10,31 +10,31 @@
 
 
 def is_fizz_buzz(arr):
-    start = None
-    for i, item in enumerate(arr):
-        if type(item) is int:
-            start = item - i
+    start = None ## Create blank starting value 
+    for i, item in enumerate(arr): ## create a loop for items in the array 
+        if type(item) is int: ## if the array item is an integer
+            start = item - i ## start value is the item in the array - the item
             break
-    if start is None:
+    if start is None: ## if the start value stays None, return False 
         return False
     
-    for i, item in enumerate(arr):
-        expected_number = start + i
-        expected_value = None
+    for i, item in enumerate(arr): ## create a loop for items in the array 
+        expected_number = start + i ## create variable for start value plus value in i 
+        expected_value = None ## create variable setting the expected value as None 
         
-        if expected_number % 15 == 0:
+        if expected_number % 15 == 0: ## if else statement to confirm the corresponding Fizz, Buzz, and FizzBuzz integers have the correct operating integers
             expected_value = "FizzBuzz"
         elif expected_number % 3 == 0:
             expected_value = "Fizz"
         elif expected_number % 5 == 0:
             expected_value = "Buzz"
         else:
-            expected_value = expected_number
+            expected_value = expected_number ## if the values are not in the associated Fizz, Buzz, or FizzBuzz integers, expected value should be the same as the expected number 
         
-        if item != expected_value:
+        if item != expected_value: ## if the array item does not equal the expected value, the array is invalid 
             return False
     
-    return True
+    return True ## returns true if the array is valid 
     
 
 
