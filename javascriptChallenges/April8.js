@@ -11,30 +11,30 @@ function isFizzBuzz(arr) {
 
 
     
-    let start = null;
+    let start = null; // create blank starting value 
   
   
-    for (let i = 0; i < arr.length; i++) {
-      if (typeof arr[i] === "number") {
-        start = arr[i] - i;
-        break;
+    for (let i = 0; i < arr.length; i++) { //create loop for each item in the array
+      if (typeof arr[i] === "number") { //check to determine if each item is a number type
+        start = arr[i] - i; //change value of blank array to be the value of the number in the array, minus 1
+        break; //stop loop after all numbers have been created 
       }
     }
   
 
-    if (start === null) {
-      return false;
+    if (start === null) { //if statement declaring that if there are no numbers, the statement is in valid 
+      return false; 
     }
   
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) { //new loop to find the expected numbers within the array 
   
   
-      let expectedNumber = start + i;
-      let expectedValue;
+      let expectedNumber = start + i; //declares variable for the starting number + the proceeding array integer 
+      let expectedValue;  //creates blank variable for the expected value of the corresponding integer 
   
 
-      if (expectedNumber % 15 === 0) {
+      if (expectedNumber % 15 === 0) { //if then statement to confirm the corresponding string values 
         expectedValue = "FizzBuzz";
       } else if (expectedNumber % 3 === 0) {
         expectedValue = "Fizz";
@@ -44,13 +44,13 @@ function isFizzBuzz(arr) {
         expectedValue = expectedNumber;
       }
 
-      if (arr[i] !== expectedValue) {
+      if (arr[i] !== expectedValue) { //if statement to clarify that if the value of an array item is not the expected corresponding value, the array is invalid
         return false;
       }
     }
   
   
-    return true;
+    return true; //declares true if all conditions are met 
   }
   
   
