@@ -12,14 +12,14 @@
 
 function getNextBingoNumber(n) {
 
-    let bingArray = n.split("")
-    let bingValue = bingArray[1] + bingArray[2]
-    //console.log(bingArray)
-    //console.log(bingValue)
-    let myNum = parseInt(bingValue) + 1
-    //console.log(myNum)
-    let nextLetter = bingArray[0] +myNum
-    if (myNum > 1 && myNum <= 15){
+    let bingArray = n.split("") // splits n into an array by character
+    let bingValue = bingArray[1] + bingArray[2] // creates value to hold the number provided in n 
+    //console.log(bingArray), logs to confirm correct answer
+    //console.log(bingValue), logs to confirm correct number was generated 
+    let myNum = parseInt(bingValue) + 1 // converts the pulled value into an integer and adds 1 to it
+    //console.log(myNum), confirms the correct value was generated
+    let nextLetter = bingArray[0] +myNum // creates blank value to hold new BINGO letter
+    if (myNum > 1 && myNum <= 15){ // if else statement to determine the next Bingo Number by letter
       nextLetter = `B${myNum}`
     } else if (myNum >= 16 && myNum <=30){
       nextLetter = `I${myNum}`
@@ -29,13 +29,13 @@ function getNextBingoNumber(n) {
       nextLetter = `G${myNum}`
     } else if (myNum >= 61 && myNum <=75){
       nextLetter = `O${myNum}`
-    } else if (myNum > 75){
+    } else if (myNum > 75){ //creates final possible answer to "restart" the loop if the final letter of 075 is pulled 
       nextLetter = `B1`
     }
     
     
-    console.log(nextLetter)
-    return nextLetter;
+    console.log(nextLetter) // confirms correct answer 
+    return nextLetter; //pulls correct answer 
   }
   
   
