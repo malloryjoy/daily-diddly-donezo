@@ -11,14 +11,14 @@
 # For example, given "B10", return "B11", the next bingo number. If given the last bingo number, return "B1".
 
 def get_next_bingo_number(n):
-    bing_array = list(n)
-    ##print(bing_array)
-    bing_value = bing_array[1]+ bing_array[2]
-    ##print(bing_value)
-    my_num = int(bing_value) + 1
-    ##print(my_num)
-    next_letter = my_num
-    if my_num > 1 and my_num <= 15:
+    bing_array = list(n) ## splits n into an array by character
+    ##print(bing_array), confirms n was split correctly
+    bing_value = bing_array[1]+ bing_array[2] ## creates value to hold the number provided in n 
+    ##print(bing_value), confirms the correct value was pulled 
+    my_num = int(bing_value) + 1 ## converts the pulled value into an integer and adds 1 to it 
+    ##print(my_num), confirms the correct value was generated 
+    next_letter = my_num ## creates blank value to hold new BINGO letter  
+    if my_num > 1 and my_num <= 15: ## if else statement to determine the next Bingo Number by letter
         next_letter = f"B{my_num}"
     elif my_num >= 16 and my_num <=30:
         next_letter = f"I{my_num}"
@@ -28,11 +28,11 @@ def get_next_bingo_number(n):
         next_letter = f"G{my_num}"
     elif my_num >= 61 and my_num <=75:
         next_letter = f"O{my_num}"
-    elif my_num > 75:
+    elif my_num > 75: ## creates final possible answer to "restart" the loop if the final letter of 075 is pulled 
       next_letter = "B1"
     
-    print(next_letter)
-    return next_letter
+    print(next_letter) ## confirms correct answer 
+    return next_letter ## pulls correct answer 
 
 
 
