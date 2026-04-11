@@ -16,15 +16,16 @@ def rook_bishop_attack(rook, bishop):
     bishop_list = list(bishop) ## creates list dividing bishop by character
     ##print(rook_list)
     chess_move = "" ##creates blank variable to hold answer 
-    convert_rook = ord(rook_list[0]) - 64
-    convert_bishop = ord(bishop_list[0]) - 64
-    ##print(convert_rook)
+    convert_rook = ord(rook_list[0]) - 64 ## creates variable that holds the converted corresponding rook alpha location to numeric location
+    convert_bishop = ord(bishop_list[0]) - 64 ## creates variable that holds the converted corresponding bishop alpha location to numeric location
+    ##print(convert_rook) 
     ##print(convert_bishop)
-    if rook_list[0] == bishop_list[0] or rook_list[1] == bishop_list[1]: 
+    if rook_list[0] == bishop_list[0] or rook_list[1] == bishop_list[1]: ## if else statement that determines if a rook or a bishop (or neither) can attack
         chess_move = "rook"
     elif abs(convert_rook - convert_bishop) == abs(int(rook_list[1]) - int(bishop_list[1])):
         chess_move = "bishop"
     else:
         chess_move = "neither"
-    print(chess_move)
-    return chess_move
+    print(chess_move) ## prints to confirm correct answer 
+    return chess_move ## returns correct answer 
+    
