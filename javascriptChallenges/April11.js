@@ -8,15 +8,15 @@ function rookBishopAttack(rook, bishop) {
     let convertedBishop = convertBishop[0] //holds the new numeric value
     //console.log(convertRook) confirms correct Rook array
     //console.log(convertBishop) confirms correct Bishop array
-    if (rookArray[0] == bishopArray[0] || rookArray[1] == bishopArray[1]){
+    if (rookArray[0] == bishopArray[0] || rookArray[1] == bishopArray[1]){ //if else statement to determine if the move qualifies for the rook or bishop to attack, or return neither if neither can attack
       chessMove = "rook"
-    } else if (Math.abs(convertedRook - convertedBishop) === Math.abs(convertRook[1] - convertBishop[1])){
+    } else if (Math.abs(convertedRook - convertedBishop) === Math.abs(convertRook[1] - convertBishop[1])){ 
       chessMove = "bishop"
     } else {
       chessMove = "neither"
     }
-    console.log(chessMove)
-    return chessMove;
+    console.log(chessMove) //log correct answer 
+    return chessMove; //returns correct answer 
   }
   
   rookBishopAttack("A1", "A5") //should return "rook".
