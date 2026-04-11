@@ -1,3 +1,15 @@
+
+// Given a string for the location of a rook on a chess board, and another for the location of a bishop, determine if one piece can attack another.
+// A standard chessboard is 8x8, with columns labeled A through H (left to right) and rows labeled 1 through 8 (bottom to top).
+
+// Rooks can move as many squares as they want in a horizontal or vertical direction.
+// Bishops can move as many squares as they want in any diagonal direction.
+// One piece can attack another if it can move to the location of that piece. Return:
+// "rook" if the rook can attack the bishop.
+// "bishop" if the bishop can attack the rook.
+// "neither" if neither piece can attack one another.
+
+
 function rookBishopAttack(rook, bishop) {
     let rookArray = rook.split("") //splits rook position into an array by character 
     let bishopArray = bishop.split("") //splits bishop position into an array by character 
