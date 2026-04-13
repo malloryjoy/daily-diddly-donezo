@@ -14,10 +14,10 @@ def get_initials(name):
     our_initials = ".".join(first_chars) ## creates variable holding the initials from the list, separated by a "."
     ##print(our_initials), confirms string was created correctly 
     final_initials = our_initials + "." ## creates variable to hold initials, and an end "."
-    print(final_initials) ## prints correct answer 
+    print(final_initials) ## confirms correct answer 
     
 
-    return final_initials
+    return final_initials ## returns final initials answer 
 
 
 
