@@ -7,15 +7,15 @@
 
 
 function getInitials(name) {
-    let initialArray = name.split(" ")
-    //console.log(initialArray)
-    const firstChars = initialArray.map(item => item[0]);
-    //console.log(firstChars)
-    const ourInitials = firstChars.join(".")
-    //console.log(ourInitials)
-    const finalInitials = ourInitials + '.'
-    console.log(finalInitials)
-    return finalInitials;
+    let initialArray = name.split(" ") // separate name into items in an array
+    //console.log(initialArray), confirms array was created correctly
+    const firstChars = initialArray.map(item => item[0]); //creates new array using only the first characters of each item in the array
+    //console.log(firstChars), confirms array was created correctly
+    const ourInitials = firstChars.join(".") //creates answer in the form of a string, merging the items in the array with a "."
+    //console.log(ourInitials), confirms correct string was generated 
+    const finalInitials = ourInitials + '.' //creates answer of the generated string with a final "."
+    console.log(finalInitials) // confirms correct answer 
+    return finalInitials; // returns correct answer 
   }
   
   
