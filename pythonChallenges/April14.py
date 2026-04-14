@@ -6,7 +6,7 @@
 import re
 
 def get_last_letter(s):
-    cleaned_str = "".join(char for char in s if char.isalpha())
+    cleaned_str = "".join(char for char in s if char.isalpha()) 
     ## print(cleaned_str)
     the_letter = " "
     upper_count = sum(1 for char in cleaned_str if char.isupper())
