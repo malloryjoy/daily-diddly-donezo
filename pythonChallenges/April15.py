@@ -4,13 +4,13 @@
 # Then swap all values whose index is a multiple of 3 with the value before it.
 
 def sort_and_swap(arr):
-    my_sorted = sorted(arr)
-    for i in range(3, len(my_sorted), 3):
-      my_sorted[i], my_sorted[i - 1] = my_sorted[i - 1], my_sorted[i]
-    print(my_sorted)
+    my_sorted = sorted(arr) ## creates variable that sorts the array in numerical order 
+    for i in range(3, len(my_sorted), 3): ## for loop applied to each item in the array, setting i as 3 to start, to loop through the length of the sorted array, going up by 3 
+      my_sorted[i], my_sorted[i - 1] = my_sorted[i - 1], my_sorted[i] ## reorders array items divisible by 3 to be flipped with the array item after to be the item before it 
+    print(my_sorted) ## prints to confirm correct answer 
     
     
-    return my_sorted
+    return my_sorted ## returns correct answer 
 
 
 sort_and_swap([3, 1, 2, 4, 6, 5]) ##should return [1, 2, 4, 3, 5, 6].
