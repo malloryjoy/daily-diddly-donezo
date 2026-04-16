@@ -17,7 +17,7 @@ import sys
 
 if __name__ == '__main__':
     n = int(input().strip())
-    if n % 2 != 0 or (n % 2 == 0 and (n >= 6 and n <=20) ):
+    if n % 2 != 0 or (n % 2 == 0 and (n >= 6 and n <=20) ): ## if n is odd or even and between 6 and 20, print "Weird"
         print("Weird")
-    elif n%2 == 0 or (n%2 == 0 and (n > 20)):
+    elif n%2 == 0 or (n%2 == 0 and (n > 20)): ## if n is even or odd and greater than 20, print "Not Weird"
         print("Not Weird")
